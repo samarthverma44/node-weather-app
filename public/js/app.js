@@ -7,7 +7,7 @@ window.addEventListener('load',()=>{
     formObj.addEventListener('submit',(e)=>{
         e.preventDefault();
         const loc = placeObj.value;
-        const url = "http://localhost:3000/weather?address="+loc
+        const url = "/weather?address="+loc
         location.assign(url);
     })
 })
